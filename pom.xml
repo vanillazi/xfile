@@ -67,6 +67,17 @@
             <version>${picocli.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>net.ifok.image</groupId>
+            <artifactId>image4j</artifactId>
+            <version>0.7.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-imaging</artifactId>
+            <version>1.0-alpha3</version>
+        </dependency>
     </dependencies>
 
 </project>
