@@ -1,0 +1,156 @@
+{
+  "data": [
+    {
+      "id": 4912689,
+      "stage_id": 1,
+      "subject_id": 3,
+      "document_id": 13630275,
+      "document_code": null,
+      "file_type": "jpg",
+      "title": "",
+      "format_subset_count": 1,
+      "is_ppt_document_more": false,
+      "format_subsets": [
+        {
+          "title": "【期中模拟卷】人教版小学数学四年级上册 期中模拟试卷（2）（含答案）.docx",
+          "item_id": 0,
+          "file_type": "docx",
+          "tag_id": 28,
+          "tag_name": "练习",
+          "preview_file_type": "image",
+          "total_files_count": 14,
+          "can_view_file_count": 9,
+          "remains_files_count": 5,
+          "preview_files": [
+            {
+              "file_url": "13630275/0/0.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/0.jpg"
+            },
+            {
+              "file_url": "13630275/0/1.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/1.jpg"
+            },
+            {
+              "file_url": "13630275/0/2.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/2.jpg"
+            },
+            {
+              "file_url": "13630275/0/3.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/3.jpg"
+            },
+            {
+              "file_url": "13630275/0/4.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/4.jpg"
+            },
+            {
+              "file_url": "13630275/0/5.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/5.jpg"
+            },
+            {
+              "file_url": "13630275/0/6.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/6.jpg"
+            },
+            {
+              "file_url": "13630275/0/7.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/7.jpg"
+            },
+            {
+              "file_url": "13630275/0/8.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/8.jpg"
+            },
+            {
+              "file_url": "13630275/0/9.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/9.jpg"
+            },
+            {
+              "file_url": "13630275/0/10.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/10.jpg"
+            },
+            {
+              "file_url": "13630275/0/11.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/11.jpg"
+            },
+            {
+              "file_url": "13630275/0/12.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/12.jpg"
+            },
+            {
+              "file_url": "13630275/0/13.jpg",
+              "file_type": "jpg",
+              "guess_type": "image",
+              "url": "//img-preview.51jiaoxi.com/1/3/13630275/0/13.jpg"
+            }
+          ]
+        }
+      ],
+      "is_beike_vip": false,
+      "can_view_preview": false,
+      "doc_tags": [
+        {
+          "id": 8,
+          "name": "期中"
+        },
+        {
+          "id": 124,
+          "name": "模拟卷"
+        },
+        {
+          "id": 126,
+          "name": "上学期"
+        },
+        {
+          "id": 22,
+          "name": "文字版"
+        },
+        {
+          "id": 24,
+          "name": "有答案"
+        },
+        {
+          "id": 28,
+          "name": "作业/练习"
+        },
+        {
+          "id": 96,
+          "name": "四年级"
+        }
+      ],
+      "preview_top_ad": null,
+      "preview_end_ad": {
+        "id": 65,
+        "name": "数学口算宝",
+        "image_url": "http://img.51jiaoxi.com/images/b5b1d1ecde54d50c4354a439d5c45ddc.png",
+        "url": "https://www.51jiaoxi.com/article-6065.html",
+        "bg_color": "#ffffff",
+        "cdn_url": "http://img.51jiaoxi.com/images/b5b1d1ecde54d50c4354a439d5c45ddc.png",
+        "redirec_url": "https://www.51jiaoxi.com/article-6065.html"
+      }
+    }
+  ]
+}
