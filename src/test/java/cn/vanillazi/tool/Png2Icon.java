@@ -13,8 +13,8 @@ import java.io.IOException;
 public class Png2Icon {
 
     public static void main(String[] args) throws IOException, ImageWriteException {
-        var image=ImageIO.read(new File("D:\\workspaces\\me\\jdk-switcher\\src\\main\\resources\\img\\jdk-switcher.png"));
-        var out=new FileOutputStream(new File("target/test.ico"));
+        var image=ImageIO.read(new File("C:\\Users\\wanazi\\Desktop\\logo.png"));
+        var out=new FileOutputStream(new File("target/logo.ico"));
         var params=new IcoImagingParameters();
         params.setStrict(false);
         params.setPixelDensity(PixelDensity.createFromPixelsPerInch(128,128));
