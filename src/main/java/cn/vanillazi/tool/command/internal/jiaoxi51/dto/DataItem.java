@@ -5,190 +5,108 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DataItem{
 
-    @JsonProperty("subject_id")
-    private Integer subjectId;
+	@JsonProperty("subject_id")
+	private int subjectId;
 
-    @JsonProperty("stage_id")
-    private Integer stageId;
+	@JsonProperty("stage_id")
+	private int stageId;
 
-    @JsonProperty("doc_tags")
-    private List<DocTagsItem> docTags;
+	@JsonProperty("doc_tags")
+	private List<DocTagsItem> docTags;
 
-    @JsonProperty("document_code")
-    private Object documentCode;
+	@JsonProperty("document_code")
+	private Object documentCode;
 
-    @JsonProperty("document_id")
-    private Integer documentId;
+	@JsonProperty("document_id")
+	private int documentId;
 
-    @JsonProperty("title")
-    private String title;
+	@JsonProperty("title")
+	private String title;
 
-    @JsonProperty("is_beike_vip")
-    private Boolean isBeikeVip;
+	@JsonProperty("is_beike_vip")
+	private boolean isBeikeVip;
 
-    @JsonProperty("preview_end_ad")
-    private PreviewEndAd previewEndAd;
+	@JsonProperty("preview_end_ad")
+	private PreviewEndAd previewEndAd;
 
-    @JsonProperty("is_ppt_document_more")
-    private Boolean isPptDocumentMore;
+	@JsonProperty("is_ppt_document_more")
+	private boolean isPptDocumentMore;
 
-    @JsonProperty("can_view_preview")
-    private Boolean canViewPreview;
+	@JsonProperty("can_view_preview")
+	private boolean canViewPreview;
 
-    @JsonProperty("file_type")
-    private String fileType;
+	@JsonProperty("file_type")
+	private String fileType;
 
-    @JsonProperty("format_subsets")
-    private List<FormatSubsetsItem> formatSubsets;
+	@JsonProperty("format_subsets")
+	private List<FormatSubsetsItem> formatSubsets;
 
-    @JsonProperty("id")
-    private Integer id;
+	@JsonProperty("id")
+	private int id;
 
-    @JsonProperty("format_subset_count")
-    private Integer formatSubsetCount;
+	@JsonProperty("format_subset_count")
+	private int formatSubsetCount;
 
-    @JsonProperty("preview_top_ad")
-    private Object previewTopAd;
+	@JsonProperty("preview_top_ad")
+	private Object previewTopAd;
 
-    public void setSubjectId(Integer subjectId){
-        this.subjectId = subjectId;
-    }
+	public int getSubjectId(){
+		return subjectId;
+	}
 
-    public Integer getSubjectId(){
-        return subjectId;
-    }
+	public int getStageId(){
+		return stageId;
+	}
 
-    public void setStageId(Integer stageId){
-        this.stageId = stageId;
-    }
+	public List<DocTagsItem> getDocTags(){
+		return docTags;
+	}
 
-    public Integer getStageId(){
-        return stageId;
-    }
+	public Object getDocumentCode(){
+		return documentCode;
+	}
 
-    public void setDocTags(List<DocTagsItem> docTags){
-        this.docTags = docTags;
-    }
+	public int getDocumentId(){
+		return documentId;
+	}
 
-    public List<DocTagsItem> getDocTags(){
-        return docTags;
-    }
+	public String getTitle(){
+		return title;
+	}
 
-    public void setDocumentCode(Object documentCode){
-        this.documentCode = documentCode;
-    }
+	public boolean isIsBeikeVip(){
+		return isBeikeVip;
+	}
 
-    public Object getDocumentCode(){
-        return documentCode;
-    }
+	public PreviewEndAd getPreviewEndAd(){
+		return previewEndAd;
+	}
 
-    public void setDocumentId(Integer documentId){
-        this.documentId = documentId;
-    }
+	public boolean isIsPptDocumentMore(){
+		return isPptDocumentMore;
+	}
 
-    public Integer getDocumentId(){
-        return documentId;
-    }
+	public boolean isCanViewPreview(){
+		return canViewPreview;
+	}
 
-    public void setTitle(String title){
-        this.title = title;
-    }
+	public String getFileType(){
+		return fileType;
+	}
 
-    public String getTitle(){
-        return title;
-    }
+	public List<FormatSubsetsItem> getFormatSubsets(){
+		return formatSubsets;
+	}
 
-    public void setIsBeikeVip(Boolean isBeikeVip){
-        this.isBeikeVip = isBeikeVip;
-    }
+	public int getId(){
+		return id;
+	}
 
-    public Boolean isIsBeikeVip(){
-        return isBeikeVip;
-    }
+	public int getFormatSubsetCount(){
+		return formatSubsetCount;
+	}
 
-    public void setPreviewEndAd(PreviewEndAd previewEndAd){
-        this.previewEndAd = previewEndAd;
-    }
-
-    public PreviewEndAd getPreviewEndAd(){
-        return previewEndAd;
-    }
-
-    public void setIsPptDocumentMore(Boolean isPptDocumentMore){
-        this.isPptDocumentMore = isPptDocumentMore;
-    }
-
-    public Boolean isIsPptDocumentMore(){
-        return isPptDocumentMore;
-    }
-
-    public void setCanViewPreview(Boolean canViewPreview){
-        this.canViewPreview = canViewPreview;
-    }
-
-    public Boolean isCanViewPreview(){
-        return canViewPreview;
-    }
-
-    public void setFileType(String fileType){
-        this.fileType = fileType;
-    }
-
-    public String getFileType(){
-        return fileType;
-    }
-
-    public void setFormatSubsets(List<FormatSubsetsItem> formatSubsets){
-        this.formatSubsets = formatSubsets;
-    }
-
-    public List<FormatSubsetsItem> getFormatSubsets(){
-        return formatSubsets;
-    }
-
-    public void setId(Integer id){
-        this.id = id;
-    }
-
-    public Integer getId(){
-        return id;
-    }
-
-    public void setFormatSubsetCount(Integer formatSubsetCount){
-        this.formatSubsetCount = formatSubsetCount;
-    }
-
-    public Integer getFormatSubsetCount(){
-        return formatSubsetCount;
-    }
-
-    public void setPreviewTopAd(Object previewTopAd){
-        this.previewTopAd = previewTopAd;
-    }
-
-    public Object getPreviewTopAd(){
-        return previewTopAd;
-    }
-
-    @Override
-     public String toString(){
-        return 
-            "DataItem{" + 
-            "subject_id = '" + subjectId + '\'' + 
-            ",stage_id = '" + stageId + '\'' + 
-            ",doc_tags = '" + docTags + '\'' + 
-            ",document_code = '" + documentCode + '\'' + 
-            ",document_id = '" + documentId + '\'' + 
-            ",title = '" + title + '\'' + 
-            ",is_beike_vip = '" + isBeikeVip + '\'' + 
-            ",preview_end_ad = '" + previewEndAd + '\'' + 
-            ",is_ppt_document_more = '" + isPptDocumentMore + '\'' + 
-            ",can_view_preview = '" + canViewPreview + '\'' + 
-            ",file_type = '" + fileType + '\'' + 
-            ",format_subsets = '" + formatSubsets + '\'' + 
-            ",id = '" + id + '\'' + 
-            ",format_subset_count = '" + formatSubsetCount + '\'' + 
-            ",preview_top_ad = '" + previewTopAd + '\'' + 
-            "}";
-        }
+	public Object getPreviewTopAd(){
+		return previewTopAd;
+	}
 }

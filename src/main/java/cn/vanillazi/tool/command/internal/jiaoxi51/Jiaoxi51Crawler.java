@@ -63,29 +63,33 @@ public class Jiaoxi51Crawler {
         }
         var om=new ObjectMapper();
         var result=om.reader().readValue(resp.body(), Response.class);
-        var doc=result.getData().get(0).getFormatSubsets().get(0);
-        var files=doc.getPreviewFiles();
-        var title=doc.getTitle();
-        var path= output.resolve(title);
-        if(path.toFile().exists()){
-            FileUtils.deleteDirectory(path.toFile());
-        }
-        path.toFile().mkdirs();
-        files.forEach(f->{
-            var fUrl=f.getUrl();
-            var targetName=FilenameUtils.getName(fUrl);
-            var targetPath=path.resolve(targetName);
-            try {
-                var imageUrl="https:"+fUrl;
-                var re=hc.send(baseBuilder().GET().uri(URI.create(imageUrl)).build(),
-                        HttpResponse.BodyHandlers.ofFile(targetPath));
-                if(re.statusCode()!=200){
-                    throw new RuntimeException("download image from "+imageUrl+" failed!");
-                }
-            } catch (IOException | InterruptedException e) {
-                throw new RuntimeException(e);
+        var subsets=result.getData().get(0).getFormatSubsets();
+        for(int i=0;i<subsets.size();i++) {
+            var doc =subsets.get(i);
+            var files = doc.getPreviewFiles();
+            var title = doc.getTitle();
+            var path = output.resolve(title);
+            if (path.toFile().exists()) {
+                FileUtils.deleteDirectory(path.toFile());
             }
-        });
+            path.toFile().mkdirs();
+            var targetNamePrefix=i+"";
+            files.forEach(f -> {
+                var fUrl = f.getUrl();
+                var targetName = targetNamePrefix+FilenameUtils.getName(fUrl);
+                var targetPath = path.resolve(targetName);
+                try {
+                    var imageUrl = "https:" + fUrl;
+                    var re = hc.send(baseBuilder().GET().uri(URI.create(imageUrl)).build(),
+                            HttpResponse.BodyHandlers.ofFile(targetPath));
+                    if (re.statusCode() != 200) {
+                        throw new RuntimeException("download image from " + imageUrl + " failed!");
+                    }
+                } catch (IOException | InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        }
         return true;
     }
 }
