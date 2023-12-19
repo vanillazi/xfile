@@ -1,8 +1,11 @@
 package cn.vanillazi.tool.command.internal.jiaoxi51;
 
+import org.jsoup.Jsoup;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URL;
 import java.nio.file.Path;
 import java.util.Arrays;
 
@@ -38,4 +41,19 @@ class Jiaoxi51CrawlerTest {
         });
 
     }
+
+    @Test
+    public void downloadBatchOnPage( ) throws IOException, InterruptedException {
+
+        var doc=Jsoup.parse(URI.create("https://www.51jiaoxi.com/album-23139.html").toURL(),3000);
+        var docPreviews=doc.getElementsByClass("doc-preview");
+        docPreviews.stream()
+                .map(div->div.attr("data-id"))
+                .map(id->String.format("https://www.51jiaoxi.com/api/document/preview?document_id=%s&all=1",id))
+                .forEach(url->{
+                    Jiaoxi51Crawler.download(url, Path.of("target"));
+                });
+    }
+
+
 }
