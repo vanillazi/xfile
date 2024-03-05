@@ -32,6 +32,9 @@ public class DataItem{
 	@JsonProperty("is_ppt_document_more")
 	private boolean isPptDocumentMore;
 
+	@JsonProperty("video_url")
+	private String videoUrl;
+
 	@JsonProperty("can_view_preview")
 	private boolean canViewPreview;
 
@@ -84,6 +87,10 @@ public class DataItem{
 
 	public boolean isIsPptDocumentMore(){
 		return isPptDocumentMore;
+	}
+
+	public String getVideoUrl(){
+		return videoUrl;
 	}
 
 	public boolean isCanViewPreview(){

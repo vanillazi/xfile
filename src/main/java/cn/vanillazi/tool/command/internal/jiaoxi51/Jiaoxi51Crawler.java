@@ -73,7 +73,7 @@ public class Jiaoxi51Crawler {
                 FileUtils.deleteDirectory(path.toFile());
             }
             path.toFile().mkdirs();
-            var targetNamePrefix=i+"";
+            var targetNamePrefix="";
             files.forEach(f -> {
                 var fUrl = f.getUrl();
                 var targetName = targetNamePrefix+FilenameUtils.getName(fUrl);

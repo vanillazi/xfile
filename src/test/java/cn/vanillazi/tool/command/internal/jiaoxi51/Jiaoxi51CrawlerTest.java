@@ -15,7 +15,7 @@ class Jiaoxi51CrawlerTest {
 
     @Test
     public void download( ) throws IOException, InterruptedException {
-        var url= "https://www.51jiaoxi.com/api/document/preview?document_id=13572901&all=1";
+        var url= "https://www.51jiaoxi.com/api/document/preview?document_id=5684438&all=1";
         Jiaoxi51Crawler.download(url, Path.of("target"));
     }
 
@@ -45,7 +45,7 @@ class Jiaoxi51CrawlerTest {
     @Test
     public void downloadBatchOnPage( ) throws IOException, InterruptedException {
 
-        var doc=Jsoup.parse(URI.create("https://www.51jiaoxi.com/album-23139.html").toURL(),3000);
+        var doc=Jsoup.parse(URI.create("https://www.51jiaoxi.com/album-63302.html").toURL(),3000);
         var docPreviews=doc.getElementsByClass("doc-preview");
         docPreviews.stream()
                 .map(div->div.attr("data-id"))

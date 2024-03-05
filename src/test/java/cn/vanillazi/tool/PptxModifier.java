@@ -14,7 +14,7 @@ import java.nio.file.Path;
 public class PptxModifier {
 
     public static void main(String[] args) throws IOException {
-        var root=Path.of("C:\\Users\\tqd\\Downloads\\【整书课件】数学人教四（上）-最新教材版\\");
+        var root=Path.of("C:\\Users\\tqd\\Downloads\\【整书课件】数学人教四（下）-最新教材");
         var dst=new File("target"+File.separator+"test");
         if(dst.exists()){
             FileUtils.deleteDirectory(dst);
